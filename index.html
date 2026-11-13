@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="NAMplified is a macOS guitar rig built around Neural Amp Modeler captures.">
+<title>NAMplified — Your guitar. Your signal chain.</title>
+<link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./style.css">
+<script src="./video.js" defer></script>
+</head>
+<body>
+<header class="wrap">
+<a class="brand" href="./"><img src="./assets/icon.svg" width="34" height="34" alt="">NAMplified</a>
+<nav aria-label="Main navigation"><a href="#rig">The rig</a><a href="#builder">Preset Builder</a><a href="#release">Release status</a>
+<!-- Add the GitHub URL as href when available. -->
+<a title="GitHub · coming soon" aria-label="GitHub · coming soon" style="display: inline-flex; align-items: center">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 16 16" fill="currentColor">
+<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+</svg>
+</a>
+</nav>
+</header>
+<main>
+<section class="hero wrap" aria-labelledby="headline">
+<div class="intro">
+<p class="label">GUITAR SIGNAL CHAIN / MACOS</p>
+<h1 id="headline">Build your rig.<br><em>See the signal.</em></h1>
+<p class="lede">NAMplified puts pedals, two Neural Amp Modeler captures, cabinet IRs and post effects on one board. Click a block to shape its sound while the whole chain stays in view.</p>
+<a class="button" href="#rig">Explore the rig ↓</a>
+</div>
+</section>
+<figure class="screen film-wide">
+<div class="poster"><img src="./assets/amp-detail.png" width="3184" height="1850" alt="NAMplified with the AMP 1 editor and signal chain visible"></div>
+<figcaption id="film-controls" hidden style="justify-content: flex-end"></figcaption>
+</figure>
+<section id="rig" class="wrap rig">
+<p class="label">01 / THE RIG</p>
+<h2>Follow the signal.</h2>
+<p class="lede">See the whole chain and open the controls for any block as you shape your tone.</p>
+<ol class="chain" aria-label="Example signal chain"><li>Input</li><li>Pedal</li><li>NAM amps</li><li>Cab IRs</li><li>Effects</li><li>Output</li></ol>
+<div class="details">
+<article><p class="label">01 / BEFORE THE AMP</p><h3>Give the amp something to work with.</h3><p>Tighten the input with a gate, FET compressor and pre EQ. Choose Clean Boost or 808 Drive, or load a pedal capture into the Boost slot.</p></article>
+<article><p class="label">02 / AMPS &amp; CABS</p><h3>Find the blend.</h3><p>Load two .nam captures and shape each with bass, mid and treble EQ before or after the model. Blend two cabinet impulse responses and EQ them independently.</p></article>
+<article><p class="label">03 / AFTER THE AMP</p><h3>Give it space.</h3><p>Add a ping pong delay, a Room, Plate or Cloud reverb, or chorus. Reorder effects within their section and finish with post EQ.</p></article>
+</div>
+</section>
+<section id="routing" class="wrap rig">
+<p class="label">02 / ROUTING</p>
+<h2>Two amps. Three ways to wire them.</h2>
+<p class="lede">Open each view to see how NAMplified redraws the path when you change the routing.</p>
+<div class="routing">
+<details name="routing" open><summary>Series <span>Amp 1 → Amp 2</span></summary><p>Feed one active amp into the next, then blend the two cabinet IRs to taste.</p><a href="./assets/series-detail.png"><img src="./assets/series-detail.png" width="3184" height="1850" loading="lazy" alt="Series view with amp blocks in line and two cabinet branches"></a></details>
+<details name="routing"><summary>Parallel · Paired IRs <span>One cab per amp</span></summary><p>Run two amp and cab pairs side by side. Blend a cleaner path with a dirtier one, or use the optional frequency split to feed different bands to each amp.</p><a href="./assets/parallel-detail.png"><img src="./assets/parallel-detail.png" width="3184" height="1850" loading="lazy" alt="Parallel view with each amp connected to its own cabinet IR"></a></details>
+<details name="routing"><summary>Parallel · Shared IR <span>Two amps → one cab</span></summary><p>Blend the amps before a shared cabinet IR. Change the amp balance while keeping the same cabinet sound.</p><a href="./assets/shared-detail.png"><img src="./assets/shared-detail.png" width="3184" height="1850" loading="lazy" alt="Parallel view with both amp paths merging into one cabinet IR"></a></details>
+</div>
+</section>
+<section id="builder" class="wrap rig builder">
+<div>
+<p class="label">03 / PRESET BUILDER · BETA</p>
+<h2>Describe it. Then play it.</h2>
+<blockquote>“Warm clean tone with a little chorus.”</blockquote>
+<ol>
+<li>Describe the sound you want.</li>
+<li>Record up to 20 seconds of dry guitar or import a DI WAV.</li>
+<li>Compare the original rig with two generated variants at matched levels. Apply the one you prefer and keep editing.</li>
+</ol>
+<p class="lede">After the first setup, the builder runs locally on your Mac.</p>
+</div>
+<a class="frame" href="./assets/builder-detail.png"><img src="./assets/builder-detail.png" width="3184" height="1850" loading="lazy" alt="Preset Builder with a tone prompt, dry guitar input and Original, A and B audition controls"></a>
+</section>
+<section class="wrap rig library">
+<p class="label">04 / CAPTURE LIBRARY</p>
+<h2>Keep the captures you come back to.</h2>
+<p class="lede">Load your own .nam files and cabinet IRs, or browse and select individual captures through the integrated TONE3000 browser. Presets reuse files from a shared library, and the previous and next controls let you step through related captures.</p>
+<p><small>NAMplified is an independent project and is not affiliated with or endorsed by TONE3000.</small></p>
+</section>
+<section id="release" class="wrap release">
+<p class="label">05 / RELEASE STATUS</p>
+<h2>In active development.</h2>
+<p class="lede">NAMplified currently builds for macOS as a standalone app, Audio Unit and VST3. Public downloads are not available yet.</p>
+<ul class="formats" aria-label="Current macOS build formats"><li>Standalone</li><li>Audio Unit</li><li>VST3</li><li>MIDI CC Learn</li></ul>
+</section>
+</main>
+<footer class="wrap" style="flex-wrap: wrap">
+  <span>NAMplified</span>
+  <!-- Add the project URL as href and remove “coming soon” when it is live. -->
+  <a>GitHub · coming soon</a>
+  <a href="#headline">Back to top ↑</a>
+</footer>
+</body>
+</html>
