@@ -7,7 +7,6 @@
 <title>NAMplified — Your guitar. Your signal chain.</title>
 <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="./style.css">
-<script src="./video.js" defer></script>
 </head>
 <body>
 <header class="wrap">
@@ -29,9 +28,9 @@
 <a class="button" href="#rig">Explore the rig ↓</a>
 </div>
 </section>
-<figure class="screen film-wide">
-<div class="poster"><img src="./assets/amp-detail.png" width="3184" height="1850" alt="NAMplified with the AMP 1 editor and signal chain visible"></div>
-<figcaption id="film-controls" hidden style="justify-content: flex-end"></figcaption>
+<figure class="screen screenshot-wide">
+<div class="poster"><img src="./assets/new-amp.png" width="3184" height="1850" alt="NAMplified with the AMP 1 editor and signal chain visible"></div>
+
 </figure>
 <section id="rig" class="wrap rig">
 <p class="label">01 / THE RIG</p>
@@ -39,8 +38,8 @@
 <p class="lede">See the whole chain and open the controls for any block as you shape your tone.</p>
 <ol class="chain" aria-label="Example signal chain"><li>Input</li><li>Pedal</li><li>NAM amps</li><li>Cab IRs</li><li>Effects</li><li>Output</li></ol>
 <div class="details">
-<article><p class="label">01 / BEFORE THE AMP</p><h3>Give the amp something to work with.</h3><p>Tighten the input with a gate, FET compressor and pre EQ. Choose Clean Boost or 808 Drive, or load a pedal capture into the Boost slot.</p></article>
-<article><p class="label">02 / AMPS &amp; CABS</p><h3>Find the blend.</h3><p>Load two .nam captures and shape each with bass, mid and treble EQ before or after the model. Blend two cabinet impulse responses and EQ them independently.</p></article>
+<article><p class="label">01 / BEFORE THE AMP</p><h3>Give the amp something to work with.</h3><p>Use Pitch to transpose the entire rig by up to 24 semitones in either direction. Tighten the input with a gate, FET compressor and pre EQ. Choose Clean Boost or 808 Drive, or load a pedal capture into the Boost slot.</p></article>
+<article><p class="label">02 / AMPS &amp; CABS</p><h3>Find the blend.</h3><p>Load two .nam captures and shape each with bass, mid and treble EQ before or after the model. Blend two cabinet impulse responses and EQ them independently. Use Polarity → Invert on an amp to flip its signal if the parallel blend sounds thin.</p></article>
 <article><p class="label">03 / AFTER THE AMP</p><h3>Give it space.</h3><p>Add a ping pong delay, a Room, Plate or Cloud reverb, or chorus. Reorder effects within their section and finish with post EQ.</p></article>
 </div>
 </section>
@@ -48,16 +47,17 @@
 <p class="label">02 / ROUTING</p>
 <h2>Two amps. Three ways to wire them.</h2>
 <p class="lede">Open each view to see how NAMplified redraws the path when you change the routing.</p>
+<p><strong>Freq Split.</strong> With both amps active in Parallel, set the crossover frequency to send lows to Amp 1 and highs to Amp 2.</p>
 <div class="routing">
-<details name="routing" open><summary>Series <span>Amp 1 → Amp 2</span></summary><p>Feed one active amp into the next, then blend the two cabinet IRs to taste.</p><a href="./assets/series-detail.png"><img src="./assets/series-detail.png" width="3184" height="1850" loading="lazy" alt="Series view with amp blocks in line and two cabinet branches"></a></details>
-<details name="routing"><summary>Parallel · Paired IRs <span>One cab per amp</span></summary><p>Run two amp and cab pairs side by side. Blend a cleaner path with a dirtier one, or use the optional frequency split to feed different bands to each amp.</p><a href="./assets/parallel-detail.png"><img src="./assets/parallel-detail.png" width="3184" height="1850" loading="lazy" alt="Parallel view with each amp connected to its own cabinet IR"></a></details>
-<details name="routing"><summary>Parallel · Shared IR <span>Two amps → one cab</span></summary><p>Blend the amps before a shared cabinet IR. Change the amp balance while keeping the same cabinet sound.</p><a href="./assets/shared-detail.png"><img src="./assets/shared-detail.png" width="3184" height="1850" loading="lazy" alt="Parallel view with both amp paths merging into one cabinet IR"></a></details>
+<details name="routing" open><summary>Series <span>Amp 1 → Amp 2</span></summary><p>Follow the amp blocks from left to right. After the amp section, the signal splits into two cabinet IRs that you can blend.</p><a href="./assets/new-series.png"><img src="./assets/new-series.png" width="2808" height="544" loading="lazy" alt="Series view with amp blocks in line and two cabinet branches"></a></details>
+<details name="routing"><summary>Parallel · Paired IRs <span>One cab per amp</span></summary><p>Run two amp and cab pairs side by side. Blend a cleaner path with a dirtier one.</p><a href="./assets/new-paired.png"><img src="./assets/new-paired.png" width="2836" height="540" loading="lazy" alt="Parallel view with each amp connected to its own cabinet IR"></a></details>
+<details name="routing"><summary>Parallel · Shared IR <span>Two amps → one cab</span></summary><p>Follow the two green NAM blocks into the single pink cabinet block. Both amps share that IR, so you can adjust the amp blend independently of the cabinet choice.</p><a href="./assets/new-shared.png"><img src="./assets/new-shared.png" width="2800" height="532" loading="lazy" alt="Parallel view with both amp paths merging into one cabinet IR"></a></details>
 </div>
 </section>
 <section id="builder" class="wrap rig builder">
 <div>
 <p class="label">03 / PRESET BUILDER · BETA</p>
-<h2>Describe it. Then play it.</h2>
+<h2>Preset Builder</h2>
 <blockquote>“Warm clean tone with a little chorus.”</blockquote>
 <ol>
 <li>Describe the sound you want.</li>
@@ -66,12 +66,17 @@
 </ol>
 <p class="lede">After the first setup, the builder runs locally on your Mac.</p>
 </div>
-<a class="frame" href="./assets/builder-detail.png"><img src="./assets/builder-detail.png" width="3184" height="1850" loading="lazy" alt="Preset Builder with a tone prompt, dry guitar input and Original, A and B audition controls"></a>
+<a class="frame" href="./assets/new-builder.png"><img src="./assets/new-builder.png" width="1662" height="1550" loading="lazy" alt="Preset Builder with a tone prompt, dry guitar input and Original, A and B audition controls"></a>
 </section>
 <section class="wrap rig library">
 <p class="label">04 / CAPTURE LIBRARY</p>
 <h2>Keep the captures you come back to.</h2>
-<p class="lede">Load your own .nam files and cabinet IRs, or browse and select individual captures through the integrated TONE3000 browser. Presets reuse files from a shared library, and the previous and next controls let you step through related captures.</p>
+<p class="lede">Load local NAM captures and cabinet IRs, or pick a capture from TONE3000.</p>
+<p><strong>Previous / Next.</strong> Open a NAM folder and use the arrows to step through its captures while you play.</p>
+<a class="frame" href="./assets/new-tone.png">
+<img src="./assets/new-tone.png" width="1794" height="408" loading="lazy" alt="TONE3000 Browse button beside the loaded capture name in AMP 1">
+</a>
+<p><strong>TONE3000 tone selection.</strong> Open Browse from the amp editor, choose a tone and select the individual capture you want to load. Its name appears next to Browse.</p>
 <p><small>NAMplified is an independent project and is not affiliated with or endorsed by TONE3000.</small></p>
 </section>
 <section id="release" class="wrap release">
