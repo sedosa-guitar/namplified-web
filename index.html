@@ -11,7 +11,7 @@
 <body>
 <header class="wrap">
 <a class="brand" href="./"><img src="./assets/icon.svg" width="34" height="34" alt="">NAMplified</a>
-<nav aria-label="Main navigation"><a href="#rig">The rig</a><a href="#builder">Preset Builder</a><a href="#release">Release status</a>
+<nav aria-label="Main navigation"><a href="#rig">The rig</a><a href="#cabs">Virtual Cab</a><a href="#builder">Preset Builder</a><a href="#release">Release status</a>
 <a href="https://github.com/sedosa-guitar/namplified" title="NAMplified on GitHub" aria-label="NAMplified on GitHub" style="display: inline-flex; align-items: center">
 <svg aria-hidden="true" width="22" height="22" viewBox="0 0 16 16" fill="currentColor">
 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
@@ -26,12 +26,23 @@
 <h1 id="headline">Build your rig.<br><em>See the signal.</em></h1>
 <p class="lede">NAMplified puts pedals, two Neural Amp Modeler captures, cabinet IRs and post effects on one board. Click a block to shape its sound while the whole chain stays in view.</p>
 <a class="button" href="#rig">Explore the rig ↓</a>
+<a href="#cabs">See Virtual Cab ↓</a>
 </div>
 </section>
 <figure class="screen screenshot-wide">
-<div class="poster"><img src="./assets/namplified-signal-chain.png" width="3174" height="1822" alt="NAMplified in parallel mode with paired cabinet paths and Amp 1 controls"></div>
+<div class="poster"><img src="./assets/namplified-parallel-amp1.png" width="3174" height="1822" alt="NAMplified in parallel mode with paired cabinet paths and Amp 1 controls"></div>
 
 </figure>
+<section id="cabs" class="wrap">
+<h2>Cabinet IRs and Virtual Cab</h2>
+<p class="lede">Choose a source for each cab block and shape it with its own low, mid and high EQ.</p>
+<h3>Cabinet IR</h3>
+<p>Load a cabinet impulse response from a file.</p>
+<a class="frame" href="./assets/namplified-cab-ir.png"><img src="./assets/namplified-cab-ir.png" width="2844" height="1002" loading="lazy" alt="Cab 1 with WAV impulse response and cabinet EQ controls"></a>
+<h3>Virtual Cab · Development Preview</h3>
+<p>Choose a C414, SM57 or SM7B and move it across the Oversized 4x12 speaker or adjust its distance. Shown in a local Standalone development build.</p>
+<a class="frame" href="./assets/namplified-virtual-cab.png"><img src="./assets/namplified-virtual-cab.png" width="2844" height="1002" loading="lazy" alt="Oversized 4x12 with microphone selection, position controls and cabinet EQ"></a>
+</section>
 <section id="rig" class="wrap rig">
 <p class="label">01 / THE RIG</p>
 <h2>Follow the signal.</h2>
@@ -53,16 +64,6 @@
 <details name="routing"><summary>Parallel · Paired IRs <span>One cab per amp</span></summary><p>Run two amp and cab pairs side by side. Blend a cleaner path with a dirtier one.</p><a href="./assets/new-paired.png"><img src="./assets/new-paired.png" width="2836" height="540" loading="lazy" alt="Parallel view with each amp connected to its own cabinet IR"></a></details>
 <details name="routing"><summary>Parallel · Shared IR <span>Two amps → one cab</span></summary><p>Follow the two green NAM blocks into the single pink cabinet block. Both amps share that IR, so you can adjust the amp blend independently of the cabinet choice.</p><a href="./assets/new-shared.png"><img src="./assets/new-shared.png" width="2800" height="532" loading="lazy" alt="Parallel view with both amp paths merging into one cabinet IR"></a></details>
 </div>
-</section>
-<section id="cabs" class="wrap">
-<h2>Cabinet IRs and Virtual Cab</h2>
-<p class="lede">Choose a source for each cab block and shape it with its own low, mid and high EQ.</p>
-<h3>Cabinet IR</h3>
-<p>Load a cabinet impulse response from a file.</p>
-<a class="frame" href="./assets/namplified-cab-ir.png"><img src="./assets/namplified-cab-ir.png" width="2844" height="1002" loading="lazy" alt="Cab 1 with WAV impulse response and cabinet EQ controls"></a>
-<h3>Virtual Cab · Development Preview</h3>
-<p>Choose a C414, SM57 or SM7B and move it across the Oversized 4x12 speaker or adjust its distance. Shown in a local Standalone development build.</p>
-<a class="frame" href="./assets/namplified-virtual-cab.png"><img src="./assets/namplified-virtual-cab.png" width="2844" height="1002" loading="lazy" alt="Oversized 4x12 with microphone selection, position controls and cabinet EQ"></a>
 </section>
 <section id="builder" class="wrap rig builder">
 <div>
