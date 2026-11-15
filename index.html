@@ -24,9 +24,9 @@
 <div class="intro">
 <p class="label">GUITAR SIGNAL CHAIN / MACOS</p>
 <h1 id="headline">Build your rig.<br><em>See the signal.</em></h1>
-<p class="lede">NAMplified puts pedals, two Neural Amp Modeler captures, cabinet IRs and post effects on one board. Click a block to shape its sound while the whole chain stays in view.</p>
+<p class="lede">Build a macOS guitar rig with two NAM captures, cabinet IRs, and effects.</p>
 <a class="button" href="#rig">Explore the rig ↓</a>
-<a href="#cabs">See Virtual Cab ↓</a>
+<a href="#cabs">Explore Virtual Cab ↓</a>
 </div>
 </section>
 <figure class="screen screenshot-wide">
@@ -35,34 +35,34 @@
 </figure>
 <section id="cabs" class="wrap">
 <h2>Cabinet IRs and Virtual Cab</h2>
-<p class="lede">Choose a source for each cab block and shape it with its own low, mid and high EQ.</p>
+<p class="lede">Choose a source for each cab block and adjust its low, mid, and high EQ bands independently.</p>
 <h3>Cabinet IR</h3>
-<p>Load a cabinet impulse response from a file.</p>
+<p>Load a cabinet impulse response (IR) from a WAV file.</p>
 <a class="frame" href="./assets/namplified-cab-ir.png"><img src="./assets/namplified-cab-ir.png" width="2844" height="1002" loading="lazy" alt="Cab 1 with WAV impulse response and cabinet EQ controls"></a>
 <h3>Virtual Cab · Development Preview</h3>
-<p>Choose a C414, SM57 or SM7B and move it across the Oversized 4x12 speaker or adjust its distance. Shown in a local Standalone development build.</p>
+<p>Choose a C414, SM57, or SM7B for the Oversized 4×12, then adjust its position across the speaker and its distance from the cone. This screenshot is from a local standalone development build.</p>
 <a class="frame" href="./assets/namplified-virtual-cab.png"><img src="./assets/namplified-virtual-cab.png" width="2844" height="1002" loading="lazy" alt="Oversized 4x12 with microphone selection, position controls and cabinet EQ"></a>
 </section>
 <section id="rig" class="wrap rig">
 <p class="label">01 / THE RIG</p>
 <h2>Follow the signal.</h2>
-<p class="lede">See the whole chain and open the controls for any block as you shape your tone.</p>
+
 <ol class="chain" aria-label="Example signal chain"><li>Input</li><li>Pedal</li><li>NAM amps</li><li>Cab IRs</li><li>Effects</li><li>Output</li></ol>
 <div class="details">
-<article><p class="label">01 / BEFORE THE AMP</p><h3>Give the amp something to work with.</h3><p>Use Pitch to transpose the entire rig by up to 24 semitones in either direction. Tighten the input with a gate, FET compressor and pre EQ. Choose Clean Boost or 808 Drive, or load a pedal capture into the Boost slot.</p></article>
-<article><p class="label">02 / AMPS &amp; CABS</p><h3>Find the blend.</h3><p>Load two .nam captures and shape each with bass, mid and treble EQ before or after the model. Blend two cabinet impulse responses and EQ them independently. Use Polarity → Invert on an amp to flip its signal if the parallel blend sounds thin.</p></article>
-<article><p class="label">03 / AFTER THE AMP</p><h3>Give it space.</h3><p>Add a ping pong delay, a Room, Plate or Cloud reverb, or chorus. Reorder effects within their section and finish with post EQ.</p></article>
+<article><p class="label">01 / BEFORE THE AMP</p><h3>Give the amp something to work with.</h3><p>Transpose up to 24 semitones up or down. Add a gate, FET compressor, pre-EQ, or a boost with your own pedal capture.</p></article>
+<article><p class="label">02 / AMPS &amp; CABS</p><h3>Find the blend.</h3><p>Shape each NAM capture with pre- or post-model EQ. Invert amp polarity if the parallel blend sounds thin.</p></article>
+<article><p class="label">03 / AFTER THE AMP</p><h3>Give it space.</h3><p>Add ping-pong delay, Room, Plate, or Cloud reverb, and chorus. Finish with post-EQ.</p></article>
 </div>
 </section>
 <section id="routing" class="wrap rig">
 <p class="label">02 / ROUTING</p>
 <h2>Two amps. Three ways to wire them.</h2>
-<p class="lede">Open each view to see how NAMplified redraws the path when you change the routing.</p>
-<p><strong>Freq Split.</strong> With both amps active in Parallel, set the crossover frequency to send lows to Amp 1 and highs to Amp 2.</p>
+
+<p><strong>Freq Split.</strong> With both amps active in Parallel, set the crossover frequency to send low frequencies to Amp 1 and high frequencies to Amp 2.</p>
 <div class="routing">
-<details name="routing" open><summary>Series <span>Amp 1 → Amp 2</span></summary><p>Follow the amp blocks from left to right. After the amp section, the signal splits into two cabinet IRs that you can blend.</p><a href="./assets/new-series.png"><img src="./assets/new-series.png" width="2808" height="544" loading="lazy" alt="Series view with amp blocks in line and two cabinet branches"></a></details>
-<details name="routing"><summary>Parallel · Paired IRs <span>One cab per amp</span></summary><p>Run two amp and cab pairs side by side. Blend a cleaner path with a dirtier one.</p><a href="./assets/new-paired.png"><img src="./assets/new-paired.png" width="2836" height="540" loading="lazy" alt="Parallel view with each amp connected to its own cabinet IR"></a></details>
-<details name="routing"><summary>Parallel · Shared IR <span>Two amps → one cab</span></summary><p>Follow the two green NAM blocks into the single pink cabinet block. Both amps share that IR, so you can adjust the amp blend independently of the cabinet choice.</p><a href="./assets/new-shared.png"><img src="./assets/new-shared.png" width="2800" height="532" loading="lazy" alt="Parallel view with both amp paths merging into one cabinet IR"></a></details>
+<details name="routing" open><summary>Series <span>Amp 1 → Amp 2</span></summary><p>Run the amps in series, then blend two cabinet IRs.</p><a href="./assets/new-series.png"><img src="./assets/new-series.png" width="2808" height="544" loading="lazy" alt="Series view with amp blocks in line and two cabinet branches"></a></details>
+<details name="routing"><summary>Parallel · Paired IRs <span>One cab per amp</span></summary><p>Pair each amp with its own cabinet IR.</p><a href="./assets/new-paired.png"><img src="./assets/new-paired.png" width="2836" height="540" loading="lazy" alt="Parallel view with each amp connected to its own cabinet IR"></a></details>
+<details name="routing"><summary>Parallel · Shared IR <span>Two amps → one cab</span></summary><p>Blend both amps through one shared cabinet IR.</p><a href="./assets/new-shared.png"><img src="./assets/new-shared.png" width="2800" height="532" loading="lazy" alt="Parallel view with both amp paths merging into one cabinet IR"></a></details>
 </div>
 </section>
 <section id="builder" class="wrap rig builder">
@@ -73,9 +73,9 @@
 <ol>
 <li>Describe the sound you want.</li>
 <li>Record up to 20 seconds of dry guitar or import a DI WAV.</li>
-<li>Compare the original rig with two generated variants at matched levels. Apply the one you prefer and keep editing.</li>
+<li>Compare two level-matched variants with your original rig and apply your favorite.</li>
 </ol>
-<p class="lede">After the first setup, the builder runs locally on your Mac.</p>
+<p class="lede">After the initial setup, Preset Builder runs locally on your Mac.</p>
 </div>
 <a class="frame" href="./assets/new-builder.png"><img src="./assets/new-builder.png" width="1662" height="1550" loading="lazy" alt="Preset Builder with a tone prompt, dry guitar input and Original, A and B audition controls"></a>
 </section>
@@ -87,13 +87,13 @@
 <a class="frame" href="./assets/new-tone.png">
 <img src="./assets/new-tone.png" width="1794" height="408" loading="lazy" alt="TONE3000 Browse button beside the loaded capture name in AMP 1">
 </a>
-<p><strong>TONE3000 tone selection.</strong> Open Browse from the amp editor, choose a tone and select the individual capture you want to load. Its name appears next to Browse.</p>
+<p><strong>TONE3000.</strong> Browse tones and select a capture directly in the amp editor.</p>
 <p><small>NAMplified is an independent project and is not affiliated with or endorsed by TONE3000.</small></p>
 </section>
 <section id="release" class="wrap release">
 <p class="label">05 / RELEASE STATUS</p>
 <h2>In active development.</h2>
-<p class="lede">NAMplified currently builds for macOS as a standalone app, Audio Unit and VST3. Public downloads are not available yet.</p>
+<p class="lede">In development for macOS. Public downloads are not available yet.</p>
 <ul class="formats" aria-label="Current macOS build formats"><li>Standalone</li><li>Audio Unit</li><li>VST3</li><li>MIDI CC Learn</li></ul>
 </section>
 </main>
