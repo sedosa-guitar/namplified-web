@@ -11,7 +11,7 @@
 <body>
 <header class="wrap">
 <a class="brand" href="./"><img src="./assets/icon.svg" width="34" height="34" alt="">NAMplified</a>
-<nav aria-label="Main navigation"><a href="#routing">Routing</a><a href="#cabs">Cabinets</a><a href="#builder">Preset Builder</a><a href="#credits">Credits</a><a href="#release">Release status</a>
+<nav aria-label="Main navigation"><a href="./index.html" aria-current="page">Home</a><a href="./credits.html">Credits</a><a href="./about.html">About Me</a><a href="./download.html">Download</a>
 <a href="https://github.com/sedosa-guitar/namplified" title="NAMplified on GitHub" aria-label="NAMplified on GitHub" style="display: inline-flex; align-items: center">
 <svg aria-hidden="true" width="22" height="22" viewBox="0 0 16 16" fill="currentColor">
 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
@@ -23,12 +23,12 @@
 <section class="hero wrap" aria-labelledby="headline">
   <div>
     <h1 id="headline">NAMplified</h1>
-    <p class="lede">A guitar tone workstation for macOS with NAM amp captures, cabinet IRs, and effects.</p>
+    <p class="lede">A free, open-source guitar DSP plug-in and standalone app for macOS, with NAM amp captures, cabinet IRs, and effects.</p>
   </div>
-  <a class="button" href="#routing">Explore the signal chain ↓</a>
+  <a class="button" href="./download.html">Download for macOS ↓</a>
 </section>
 <figure class="screen wrap">
-  <img src="./assets/namplified-parallel-amp1.png" width="3216" height="1828" alt="NAMplified in parallel mode with paired cabinet paths and Amp 1 controls">
+  <img src="./assets/namplified-parallel-amp1.png?v=dual-x-808" width="3199" height="1823" alt="NAMplified in parallel mode with paired cabinet paths and Amp 1 controls">
 </figure>
 <section id="routing" class="wrap rig">
 <h2>Dual NAM routing</h2>
@@ -52,6 +52,20 @@
 <a class="frame" href="./assets/namplified-virtual-cab.png"><img src="./assets/namplified-virtual-cab.png" width="2828" height="994" loading="lazy" alt="Oversized 4x12 with microphone selection, position controls and cabinet EQ"></a>
 </article></div>
 </section>
+<section id="effects" class="wrap rig">
+<h2>Built-in effects</h2>
+<p class="lede">Tighten the signal before the amp or add space and movement after the cab.</p>
+<div class="cab-examples">
+<article>
+<h3>Before the amp</h3>
+<p>Clean up noise with the gate, shape the attack with an 1176-style compressor, and push the amp with a Clean Boost, 808 Drive, or NAM pedal capture. Use the pre EQ to shape what hits the amp.</p>
+</article>
+<article>
+<h3>After the cab</h3>
+<p>Add digital or analog delay, stereo chorus, and Room, Plate, Cloud, or IR reverb. Use the post EQ to shape the finished tone.</p>
+</article>
+</div>
+</section>
 <section id="builder" class="wrap rig builder">
 <div>
 <h2>Preset Builder <small>Beta</small></h2>
@@ -71,34 +85,6 @@
 <p><strong>Previous / Next.</strong> Open a NAM folder and use the arrows to step through its captures while you play.</p>
 <p><strong>TONE3000.</strong> Browse tones and select a capture directly in the amp editor.</p>
 <p><small>NAMplified is an independent project and is not affiliated with or endorsed by TONE3000.</small></p>
-</section>
-<section id="credits" class="wrap rig">
-  <h2>Open-source credits</h2>
-  <p class="lede">Thanks to the developers whose work shapes the sound of NAMplified.</p>
-  <dl class="credits">
-    <div>
-      <dt><a href="https://github.com/airwindows/airwindows">Airwindows</a> by Chris Johnson</dt>
-      <dd>
-        <ul>
-          <li><a href="https://www.airwindows.com/takecare/">TakeCare</a> · Stereo chorus ensemble</li>
-          <li><a href="https://github.com/airwindows/airwindows/tree/94cb6793893027fb418ffac7cdbfcb9b4c82aadb/plugins/LinuxVST/src/kPlate140">kPlate140</a> · Plate reverb</li>
-          <li><a href="https://github.com/airwindows/airwindows/tree/94cb6793893027fb418ffac7cdbfcb9b4c82aadb/plugins/LinuxVST/src/Galactic2">Galactic2</a> · Cloud reverb</li>
-        </ul>
-      </dd>
-    </div>
-    <div><dt><a href="https://github.com/michaelwillis/dragonfly-reverb">Dragonfly Reverb &amp; Freeverb3</a></dt><dd>Room reverb, built on Teru Kamogashira’s Freeverb3.</dd></div>
-    <div><dt><a href="https://github.com/Chowdhury-DSP/ChowMatrix">ChowMatrix</a> &amp; <a href="https://github.com/Chowdhury-DSP/chowdsp_wdf">chowdsp_wdf</a></dt><dd>Jatin Chowdhury’s DSP for the analog delay and boost.</dd></div>
-    <div><dt><a href="https://github.com/sdatkinson/NeuralAmpModelerCore">NeuralAmpModelerCore</a> &amp; <a href="https://github.com/juce-framework/JUCE">JUCE</a></dt><dd>Steven Atkinson’s NAM engine and the app and plug-in framework.</dd></div>
-    <div><dt><a href="https://github.com/ggml-org/llama.cpp">llama.cpp</a> &amp; <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507">Qwen</a></dt><dd>Local inference and the model behind Preset Builder.</dd></div>
-    <div><dt><a href="https://github.com/vessel-dsp/ConeTracer">ConeTracer</a></dt><dd>Cab modelling for the local Virtual Cab development preview.</dd></div>
-    <div><dt><a href="https://www.tone3000.com">TONE3000</a></dt><dd>Community NAM capture library. Browse tones and load a selected capture directly from the amp editor. NAMplified is independent and is not affiliated with or endorsed by TONE3000.</dd></div>
-  </dl>
-  <a href="https://github.com/sedosa-guitar/namplified/blob/main/THIRD_PARTY_NOTICES.md">Full credits and licenses</a>
-</section>
-<section id="release" class="wrap release">
-<h2>In active development.</h2>
-<p class="lede">Public downloads are not available yet.</p>
-<ul class="formats" aria-label="Current macOS build formats"><li>Standalone</li><li>Audio Unit</li><li>VST3</li><li>MIDI CC Learn</li></ul>
 </section>
 </main>
 <footer class="wrap" style="flex-wrap: wrap">
