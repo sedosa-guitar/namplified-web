@@ -6,7 +6,7 @@
 <meta name="description" content="NAMplified is a macOS guitar rig built around Neural Amp Modeler captures.">
 <title>NAMplified — Guitar rig for macOS</title>
 <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="./style.css?v=3d162f4a30a9">
+<link rel="stylesheet" href="./style.css?v=cabinet-ir-layout">
 </head>
 <body>
 <header class="wrap">
@@ -41,16 +41,18 @@
 <details name="routing"><summary>Parallel · Shared IR <span>Two amps → one cab</span></summary><p>Blend both amps through one shared cabinet IR.</p><a href="./assets/new-shared.png"><img src="./assets/new-shared.png" width="2776" height="518" loading="lazy" alt="Parallel view with both amp paths merging into one cabinet IR"></a></details>
 </div>
 </section>
-<section id="cabs" class="wrap rig">
-<h2>Cabinet IRs and Virtual Cab</h2>
-<p class="lede">Choose a source for each cab block and adjust its low, mid, and high EQ bands independently.</p>
-<div class="cab-examples"><article><h3>Cabinet IR</h3>
-<p>Load a cabinet impulse response (IR) from a WAV file.</p>
-<a class="frame" href="./assets/namplified-cab-ir.png"><img src="./assets/namplified-cab-ir.png" width="2828" height="994" loading="lazy" alt="Cab 1 in Impulse Response mode with cabinet EQ controls"></a>
-</article><article><h3>Virtual Cab <small>Development preview</small></h3>
-<p>Position a C414, SM57, or SM7B on the Oversized 4×12 in the local standalone development build.</p>
-<a class="frame" href="./assets/namplified-virtual-cab.png"><img src="./assets/namplified-virtual-cab.png" width="2828" height="994" loading="lazy" alt="Oversized 4x12 with microphone selection, position controls and cabinet EQ"></a>
-</article></div>
+<section id="cabs" class="wrap rig cabinet">
+  <div class="cabinet-intro">
+    <div>
+      <h2>Cabinet IRs</h2>
+      <p class="lede">Load up to two cabinet impulse responses to shape the sound of your amps.</p>
+    </div>
+    <p class="cabinet-formats"><strong>Supported files</strong><br>WAV, AIFF, FLAC, and OGG</p>
+  </div>
+  <figure class="cabinet-preview">
+    <a class="frame" href="./assets/namplified-cab-ir.png"><img src="./assets/namplified-cab-ir.png" width="2828" height="994" loading="lazy" alt="Cab 1 with an IR loaded and low, mid, and high EQ controls"></a>
+    <figcaption>Adjust the low, mid, and high EQ independently on each cab.</figcaption>
+  </figure>
 </section>
 <section id="effects" class="wrap rig">
 <h2>Built-in effects</h2>
