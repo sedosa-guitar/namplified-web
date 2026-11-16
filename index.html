@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="NAMplified is a macOS guitar rig built around Neural Amp Modeler captures.">
+<meta name="description" content="Build a dual-NAM guitar rig, audition captures with Previous and Next, and layer ideas in a four-track looper. Free for macOS.">
 <title>NAMplified — Guitar rig for macOS</title>
 <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="./style.css?v=cabinet-ir-layout">
+<link rel="stylesheet" href="./style.css?v=capture-highlights">
 </head>
 <body>
 <header class="wrap">
@@ -22,16 +22,24 @@
 <main>
 <section class="hero wrap" aria-labelledby="headline">
   <div>
-    <h1 id="headline">NAMplified</h1>
-    <p class="lede">A free, open-source guitar DSP plug-in and standalone app for macOS, with NAM amp captures, cabinet IRs, and effects.</p>
+    <h1 id="headline">Two NAM captures. One rig of your own.</h1>
+    <p class="lede">Keep one amp in place while you audition captures in the other with Previous and Next. Blend both amps, split them by frequency, or give each its own cab IR.</p>
   </div>
-  <a class="button" href="./download.html">Download for macOS ↓</a>
+  <div class="hero-download">
+    <a class="button" href="./download.html">Download for macOS ↓</a>
+    <p>Free and open source · Plug-in and standalone</p>
+  </div>
 </section>
+<ul class="wrap highlights" aria-label="NAMplified features">
+  <li><a href="#captures"><strong>Switch captures in one click</strong><span>Step through a NAM folder from either amp slot, right inside your current rig.</span></a></li>
+  <li><a href="#routing"><strong>Build a tone from two amps</strong><span>Run them in series or parallel, blend them, or split them by frequency.</span></a></li>
+  <li><a href="#looper"><strong>Record, switch, layer</strong><span>Loop up to four tracks with a count-in, optional click, and individual levels.</span></a></li>
+</ul>
 <figure class="screen wrap">
   <img src="./assets/namplified-parallel-amp1.png?v=dual-x-808" width="3199" height="1823" alt="NAMplified in parallel mode with paired cabinet paths and Amp 1 controls">
 </figure>
 <section id="routing" class="wrap rig">
-<h2>Dual NAM routing</h2>
+<h2>Build a tone from two captures</h2>
 
 <p><strong>Freq Split.</strong> With both amps active in Parallel, set the crossover frequency to send low frequencies to Amp 1 and high frequencies to Amp 2.</p>
 <p class="lede">Pitch shift, gate, compression, and boost before the amps. Airwindows TakeCare chorus, delay, and reverb after the cabs.</p>
@@ -40,6 +48,21 @@
 <details name="routing"><summary>Parallel · Paired IRs <span>One cab per amp</span></summary><p>Pair each amp with its own cabinet IR.</p><a href="./assets/new-paired.png"><img src="./assets/new-paired.png" width="2776" height="518" loading="lazy" alt="Parallel view with each amp connected to its own cabinet IR"></a></details>
 <details name="routing"><summary>Parallel · Shared IR <span>Two amps → one cab</span></summary><p>Blend both amps through one shared cabinet IR.</p><a href="./assets/new-shared.png"><img src="./assets/new-shared.png" width="2776" height="518" loading="lazy" alt="Parallel view with both amp paths merging into one cabinet IR"></a></details>
 </div>
+</section>
+<section id="captures" class="wrap rig library">
+<h2>Switch captures while you play</h2>
+<p class="lede">Open a folder of NAM captures once. Then use Previous and Next in either amp slot to hear the neighboring capture with a single click, without reopening a file picker.</p>
+<p>Keep one amp in place while you audition captures in the other. Your routing, cabinet IRs, and effects stay in the chain so you can hear each capture in context.</p>
+<p>Browse TONE3000 directly from the amp editor to find more captures.</p>
+<p><small>NAMplified is an independent project and is not affiliated with or endorsed by TONE3000.</small></p>
+</section>
+<section id="looper" class="wrap rig">
+<h2>Layer ideas with a four-track looper</h2>
+<p class="lede">Record a rhythm part, switch captures, then add a lead or harmony over the same loop.</p>
+<p>Record loops up to 60 seconds with a visual count-in, optional metronome, selectable time signatures, and bar-aligned recording. Adjust level, mute, or clear each track independently.</p>
+<figure class="cabinet-preview">
+  <a class="frame" href="./assets/namplified-looper.png"><img src="./assets/namplified-looper.png" width="2822" height="1004" loading="lazy" alt="Four-track looper with tempo, time signature, click, progress bar, and individual track controls"></a>
+</figure>
 </section>
 <section id="cabs" class="wrap rig cabinet">
   <div class="cabinet-intro">
@@ -80,13 +103,6 @@
 <p class="lede">After the initial setup, Preset Builder runs locally on your Mac.</p>
 </div>
 <a class="frame" href="./assets/new-builder.png"><img src="./assets/new-builder.png" width="1472" height="1338" loading="lazy" alt="Preset Builder with a tone prompt, dry guitar input and Original, A and B audition controls"></a>
-</section>
-<section class="wrap rig library">
-<h2>Capture library</h2>
-<p class="lede">Load local NAM captures and cabinet IRs, or pick a capture from TONE3000.</p>
-<p><strong>Previous / Next.</strong> Open a NAM folder and use the arrows to step through its captures while you play.</p>
-<p><strong>TONE3000.</strong> Browse tones and select a capture directly in the amp editor.</p>
-<p><small>NAMplified is an independent project and is not affiliated with or endorsed by TONE3000.</small></p>
 </section>
 </main>
 <footer class="wrap" style="flex-wrap: wrap">
