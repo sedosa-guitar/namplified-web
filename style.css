@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("./assets/SpaceGrotesk.ttf") format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
 :root {
   color-scheme: dark;
   --background: #191817;
@@ -113,4 +120,8 @@ footer { border-top: 1px solid var(--line); }
 .credits dd { margin: 4px 0 0; color: var(--muted); }
 @media (max-width: 760px) {
   .credits { grid-template-columns: 1fr; }
+}
+
+.brand, h1, h2, h3, .button, .highlights strong {
+  font-family: "Space Grotesk", system-ui, sans-serif;
 }
