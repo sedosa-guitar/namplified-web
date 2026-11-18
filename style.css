@@ -125,3 +125,11 @@ footer { border-top: 1px solid var(--line); }
 .brand, h1, h2, h3, .button, .highlights strong {
   font-family: "Space Grotesk", system-ui, sans-serif;
 }
+
+.highlights img {
+  margin-top: 12px;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
+}
