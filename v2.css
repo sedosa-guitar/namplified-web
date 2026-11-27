@@ -1,0 +1,52 @@
+.v2 {
+  --background: #151219;
+  --surface: #211b29;
+  --text: #f6f0ff;
+  --muted: #c7bbd5;
+  --accent: #c5a3ff;
+  --line: #40334f;
+  background: radial-gradient(ellipse 65rem 34rem at 75% 13rem, #322344, transparent 72%), var(--background);
+}
+
+.v2 header nav [aria-current] { color: var(--accent); }
+
+.v2-hero {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(28px, 6vw, 86px);
+  padding-block: clamp(44px, 8vw, 108px) clamp(40px, 6vw, 82px);
+}
+
+.v2 h1, .v2 h2, .v2 h3 { font-family: "Space Grotesk", system-ui, sans-serif; }
+.v2 h1 { font-size: clamp(2.2rem, 6vw, 6.25rem); line-height: .94; }
+.v2 h1 span { display: block; color: var(--accent); font-size: 1.44em; line-height: 1; }
+.v2-label { color: var(--accent); margin: 0 0 16px; font-size: .875rem; font-weight: 650; }
+.v2-lede { max-width: 36ch; margin: 22px 0 24px; font-size: clamp(1rem, 2vw, 1.25rem); }
+.v2-jump { display: inline-flex; gap: 12px; align-items: center; color: var(--accent); font-weight: 650; }
+.v2-jump:hover, .v2 footer a:hover { color: var(--text); }
+
+.v2-capture { min-width: 0; margin: 0; }
+.v2-capture img {
+  border: 1px solid #61467d;
+  border-radius: 16px;
+  box-shadow: 0 24px 68px #0b071380;
+}
+.v2-capture figcaption { margin-top: 12px; color: var(--muted); font-size: .875rem; }
+.v2-news { border-top: 1px solid var(--line); padding-block: 32px clamp(48px, 7vw, 90px); }
+.v2-features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin-top: 22px; background: var(--line); border: 1px solid var(--line); }
+.v2-features article { background: var(--surface); padding: clamp(16px, 2.5vw, 30px); }
+.v2-features h3 { color: var(--accent); font-size: 1.2rem; }
+.v2-features p { margin: 9px 0 0; }
+
+@media (max-width: 880px) {
+  .v2-hero { grid-template-columns: 1fr; }
+  .v2 h1 span { display: inline; font-size: 1em; }
+  .v2-capture { max-width: 694px; }
+  .v2-features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 520px) {
+  .v2 h1 span { display: block; }
+  .v2-features { grid-template-columns: 1fr; }
+}
