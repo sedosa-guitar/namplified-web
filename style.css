@@ -24,6 +24,11 @@ body {
   font: 16px/1.55 system-ui, sans-serif;
 }
 
+body:not(.v2) {
+  min-height: 100vh;
+  background: radial-gradient(ellipse 65rem 34rem at 75% 13rem, #233b35, transparent 72%), var(--background);
+}
+
 a { color: inherit; text-underline-offset: .25em; }
 a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 img { display: block; width: 100%; height: auto; }
