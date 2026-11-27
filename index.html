@@ -6,7 +6,7 @@
 <meta name="description" content="A free, full-featured guitar DSP for NAM. Blend amps, shape your tone and compare rigs at matched levels in your DAW or in the standalone app.">
 <title>NAMplified — Free guitar DSP plugin for NAM</title>
 <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="./style.css?v=nam-workflows">
+<link rel="stylesheet" href="./style.css?v=effects-110">
 </head>
 <body>
 <header class="wrap">
@@ -86,18 +86,54 @@
   </figure>
 </section>
 <section id="effects" class="wrap rig">
-<h2>Built-in effects</h2>
-<p class="lede">Tighten the signal before the amp or add space and movement after the cab.</p>
-<div class="cab-examples">
-<article>
-<h3>Before the amp</h3>
-<p>Clean up noise with the gate, shape the attack with an 1176-style compressor, and push the amp with a Clean Boost, 808 Drive, or NAM pedal capture. Use the pre EQ to shape what hits the amp.</p>
-</article>
-<article>
-<h3>After the cab</h3>
-<p>Add digital or analog delay, stereo chorus, and Room, Plate, Cloud, or IR reverb. Use the post EQ to shape the finished tone.</p>
-</article>
-</div>
+  <h2>Built-in effects <small><a href="https://github.com/sedosa-guitar/namplified/releases/tag/v1.1.0">1.1.0</a></small></h2>
+  <p class="lede">Shape the guitar before the amp, then build depth and movement after the cab.</p>
+  <div class="effects-detail">
+    <article class="effect">
+      <h3>Delay</h3>
+      <figure class="effect-figure">
+        <div class="echo-map" role="img" aria-label="Ping-Pong starts on the left and feeds each repeat to the opposite channel. The repeats decay across four evenly spaced steps.">
+          <span>L</span><i class="echo echo-primary"></i><i></i><i class="echo echo-third"></i><i></i>
+          <span>R</span><i></i><i class="echo echo-second"></i><i></i><i class="echo echo-fourth"></i>
+        </div>
+        <figcaption><strong>Ping-Pong</strong><span>Repeat order →</span></figcaption>
+      </figure>
+      <dl class="effect-modes">
+        <div><dt>Digital</dt><dd>In Standard mode, the left and right channels repeat independently, preserving the placement of a stereo signal. High-pass and low-pass filters let you shape what feeds back into the next repeat.</dd></div>
+        <div><dt>Analog BBD</dt><dd>A 16,384-stage bucket-brigade model limits the bandwidth of the repeats. Turn down Tone for darker echoes that lose more high end as they circulate through the feedback loop.</dd></div>
+        <div><dt>Ping-Pong</dt><dd>With either delay type, the left and right inputs are summed to feed the echoes. The first repeat lands on the left, then feedback sends it back and forth across the stereo field.</dd></div>
+        <div><dt>Ducking</dt><dd>When your playing crosses the threshold, the repeats turn down. Set the release to control how quickly they come back between phrases.</dd></div>
+      </dl>
+    </article>
+    <article class="effect">
+      <h3>Reverb</h3>
+      <figure class="effect-figure">
+        <div class="reverb-map" role="img" aria-label="Room starts with distinct reflections. Plate has a short built-in gap followed by a dense tail. Cloud starts later and fades over a longer illustrated tail.">
+          <span>Room</span><div class="reverb-tail" aria-hidden="true"><i style="--x: 5%; --h: 82%"></i><i style="--x: 12%; --h: 64%"></i><i style="--x: 19%; --h: 43%"></i><b style="--start: 23%; --end: 29%; --peak: 80%"></b></div>
+          <span>Plate</span><div class="reverb-tail" aria-hidden="true"><b style="--start: 13%; --end: 12%; --peak: 44%"></b></div>
+          <span>Cloud</span><div class="reverb-tail" aria-hidden="true"><b style="--start: 25%; --end: 0%; --peak: 23%"></b></div>
+        </div>
+        <figcaption><strong>Reflections and reverb tails</strong><span>Time →</span></figcaption>
+      </figure>
+      <dl class="effect-modes">
+        <div><dt>Room <small>Dragonfly Room</small></dt><dd>Set the room size, then balance the first reflections against the longer tail with Early / Late Balance. Bring the reflections up for a more immediate sense of the room.</dd></div>
+        <div><dt>Plate <small>Airwindows kPlate140</small></dt><dd>The plate mode adds 12 ms of built-in pre-delay before feeding its dense tail. Turn up Damping to take more high end out of the reverb.</dd></div>
+        <div><dt>Cloud <small>Airwindows Galactic2</small></dt><dd>A diffuse stereo tail starts with 35 ms of built-in pre-delay, leaving the pick attack clear before the reverb comes in. Width controls how far the tail spreads.</dd></div>
+        <div><dt>IR Reverb</dt><dd>Load a mono or stereo WAV to apply the captured response of a room or reverb unit. It uses the first 10 seconds of the file and gives you Pre-Delay, wet filters, and Mix.</dd></div>
+      </dl>
+    </article>
+  </div>
+  <p class="effect-caption">Signal diagrams are illustrative. See <a href="./credits.html">DSP credits</a>.</p>
+  <div class="cab-examples">
+    <article>
+      <h3>Before the amp</h3>
+      <p>Clean up noise with the gate, shape the attack with an 1176-style compressor, and push the amp with a Clean Boost, 808 Drive, or NAM pedal capture. Use the pre EQ to shape what hits the amp.</p>
+    </article>
+    <article>
+      <h3>Stereo Chorus and Post EQ</h3>
+      <p>Use Classic chorus for a wide clean tone or Advanced TakeCare for more movement. Shape the finished rig with the nine-band post EQ.</p>
+    </article>
+  </div>
 </section>
 <section id="looper" class="wrap rig">
 <h2>Layer ideas with a four-track looper</h2>
